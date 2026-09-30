@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact & Boutique | Fariss Mode</title>
+<meta name="description" content="Fariss Mode — Nassim A, Sidi Moumen, Casablanca 20400. WhatsApp 06 27 00 18 98. Ouvert 11h30-23h00, vendredi dès 15h00. Livraison partout au Maroc.">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2300a651'/%3E%3Ctext x='2' y='25' font-family='Arial Black,Arial' font-size='22' font-weight='900' fill='%23ffffff'%3EFM%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
+<div class="curtain" id="fmCurtain" aria-hidden="true"><span class="curtain__label">FM</span></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html" data-curtain="FM" aria-label="Fariss Mode, accueil">
+      <span class="logo__mark">F<em>M</em></span>
+      <span class="logo__slash" aria-hidden="true"></span>
+      <span class="logo__txt">Fariss Mode<br>Casablanca</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="shop.html">Shop</a>
+      <a href="lookbook.html">Drops</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn--ghost btn--sm" href="contact.html" data-curtain="CONTACT">Nous écrire</a>
+      <button class="icon-btn cart-btn" type="button" data-cart-open aria-label="Ouvrir le panier">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="square">
+          <path d="M4 7h16l-1.2 12.4H5.2L4 7zM8.5 7V5.2a3.5 3.5 0 017 0V7M9 11.5v3M15 11.5v3"/>
+        </svg>
+        <span class="cart-badge">0</span>
+      </button>
+      <button class="burger" id="fmBurger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="fmMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="scroll-progress" id="fmProgress"></div>
+</header>
+
+<div class="mobile-menu" id="fmMenu">
+  <nav class="mobile-menu__links" aria-label="Menu mobile">
+    <a href="index.html"><span>01</span>Accueil</a>
+    <a href="shop.html"><span>02</span>Shop</a>
+    <a href="lookbook.html"><span>03</span>Drops</a>
+    <a href="about.html"><span>04</span>À propos</a>
+    <a href="contact.html"><span>05</span>Contact</a>
+  </nav>
+  <div class="mobile-menu__foot">
+    <div class="mm-block">
+      <p>Boutique</p>
+      <p style="color:var(--bone)">Nassim A, Sidi Moumen — Casa 20400</p>
+    </div>
+    <div class="mm-block">
+      <p>Horaires</p>
+      <p style="color:var(--bone)">11h30 – 23h00 · Ven 15h00</p>
+    </div>
+    <div class="mm-block">
+      <p>WhatsApp</p>
+      <a class="btn btn--volt btn--sm btn--block" href="https://wa.me/212627001898" target="_blank" rel="noopener">06 27 00 18 98</a>
+    </div>
+    <div class="mm-block">
+      <p>Réseaux</p>
+      <div class="mm-socials">
+        <a class="icon-btn" href="https://instagram.com/fariss_mode" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="icon-btn" href="https://wa.me/212627001898" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.05-1.32A10 10 0 1012 2z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Accueil</a> <i>/</i> Contact</p>
+      <h1 class="display display--lg reveal reveal--clip">On est<br>joignables</h1>
+      <p class="lead">Question sur une taille, une commande, un drop ? WhatsApp est le plus rapide. Sinon, la boutique est ouverte du lundi au dimanche.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <div class="section-head">
+            <span class="eyebrow">Écris-nous</span>
+            <h2 class="display display--md reveal reveal--clip">Formulaire</h2>
+          </div>
+
+          <form class="form form--2col" id="fmForm" novalidate>
+            <div class="field">
+              <label for="f-name">Nom</label>
+              <input id="f-name" name="name" type="text" required autocomplete="name">
+              <p class="field__err"></p>
+            </div>
+            <div class="field">
+              <label for="f-tel">Téléphone / WhatsApp</label>
+              <input id="f-tel" name="tel" type="tel" placeholder="06 XX XX XX XX" autocomplete="tel">
+              <p class="field__err"></p>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" required autocomplete="email">
+              <p class="field__err"></p>
+            </div>
+            <div class="field">
+              <label for="f-subject">Sujet</label>
+              <select id="f-subject" name="subject">
+                <option>Question sur une pièce</option>
+                <option>Commande / livraison</option>
+                <option>Suggestion de drop</option>
+                <option>Partenariat</option>
+                <option>Autre</option>
+              </select>
+              <p class="field__err"></p>
+            </div>
+            <div class="field" style="grid-column:1/-1">
+              <label for="f-msg">Message</label>
+              <textarea id="f-msg" name="message" required placeholder="Ta taille, la pièce, la ville de livraison…"></textarea>
+              <p class="field__err"></p>
+            </div>
+            <div style="grid-column:1/-1">
+              <button class="btn btn--volt btn--block" type="submit">
+                Envoyer le message
+                <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+              </button>
+              <p class="form__ok" id="fmFormOk" hidden>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M4 12.5l5 5L20 6.5"/></svg>
+                Message prêt — on te répond sur WhatsApp
+              </p>
+            </div>
+          </form>
+
+          <a class="btn btn--block" style="margin-top:12px" href="https://wa.me/212627001898" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.05-1.32A10 10 0 1012 2z"/></svg>
+            Écrire sur WhatsApp — 06 27 00 18 98
+          </a>
+        </div>
+
+        <aside>
+          <div class="section-head">
+            <span class="eyebrow">Infos</span>
+            <h2 class="display display--md reveal reveal--clip">La boutique</h2>
+          </div>
+
+          <ul class="info-list">
+            <li><span class="k">Adresse</span><span class="v">Nassim A, Sidi Moumen<br>Casablanca 20400, Maroc</span></li>
+            <li><span class="k">Téléphone</span><span class="v"><a href="tel:+212627001898">06 27 00 18 98</a></span></li>
+            <li><span class="k">WhatsApp</span><span class="v"><a href="https://wa.me/212627001898" target="_blank" rel="noopener">Discuter maintenant</a></span></li>
+            <li><span class="k">Horaires</span><span class="v">Lun – Dim · 11h30 – 23h00<br>Vendredi · 15h00 – 23h00</span></li>
+            <li><span class="k">Instagram</span><span class="v"><a href="https://instagram.com/fariss_mode" target="_blank" rel="noopener">@fariss_mode</a></span></li>
+            <li><span class="k">Livraison</span><span class="v">Partout au Maroc · Offerte dès 1 000 DH</span></li>
+          </ul>
+
+          <div class="map" role="img" aria-label="Carte : Fariss Mode, Nassim A, Sidi Moumen, Casablanca" style="margin-top:18px; overflow:hidden">
+            <iframe
+              title="Carte Google Maps — Fariss Mode"
+              src="https://www.google.com/maps?q=Nassim%20A%2C%20Sidi%20Moumen%2C%20Casablanca%2020400%2C%20Morocco&output=embed"
+              width="100%" height="100%" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+          <p class="map-note">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+            Nassim A, Sidi Moumen — 20400 Casa
+          </p>
+          <a class="btn btn--ghost btn--block btn--sm" style="margin-top:10px" href="https://www.google.com/maps/search/?api=1&query=Nassim+A%2C+Sidi+Moumen%2C+Casablanca+20400+Morocco" target="_blank" rel="noopener">Ouvrir l'itinéraire</a>
+
+          <div class="footer-socials" style="margin-top:16px">
+            <a href="https://instagram.com/fariss_mode" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.2" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://wa.me/212627001898" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.05-1.32A10 10 0 1012 2z"/></svg>
+            </a>
+            <a href="tel:+212627001898" aria-label="Appeler la boutique">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2 2A16 16 0 014 5a2 2 0 012-2z"/></svg>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <p class="mono" style="letter-spacing:.2em;text-transform:uppercase">Ouvert 7j/7</p>
+      <h2 class="reveal reveal--clip" style="margin-top:8px">On se<br>voit au shop</h2>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Nassim+A%2C+Sidi+Moumen%2C+Casablanca+20400+Morocco" target="_blank" rel="noopener">Ouvrir Maps</a>
+    </div>
+    <div class="cta-band__marquee" aria-hidden="true">NASSIM A · SIDI MOUMEN ·&nbsp;</div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-word" aria-hidden="true">FARISS MODE</p>
+
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a class="logo" href="index.html" style="margin-bottom:12px">
+          <span class="logo__mark">F<em>M</em></span>
+          <span class="logo__slash" aria-hidden="true"></span>
+        </a>
+        <p>Streetwear urbain né à Sidi Moumen. Oversized, cargos, sneakers, casquettes. Des pièces en série courte, portées par la communauté.</p>
+        <div class="footer-socials" style="margin-top:14px">
+          <a href="https://instagram.com/fariss_mode" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/212627001898" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.05-1.32A10 10 0 1012 2z"/></svg>
+          </a>
+          <a href="https://wa.me/212627001898" target="_blank" rel="noopener" aria-label="Appeler">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2 2A16 16 0 014 5a2 2 0 012-2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Boutique</h4>
+        <ul>
+          <li><a href="shop.html">Tous les produits</a></li>
+          <li><a href="shop.html?category=tees">T-Shirts &amp; Hoodies</a></li>
+          <li><a href="shop.html?category=pants">Pantalons &amp; Cargos</a></li>
+          <li><a href="shop.html?category=sneakers">Sneakers</a></li>
+          <li><a href="shop.html?category=caps">Casquettes &amp; Accessoires</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>La marque</h4>
+        <ul>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="lookbook.html">Drops &amp; Lookbook</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://instagram.com/fariss_mode" target="_blank" rel="noopener">@fariss_mode</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Infos</h4>
+        <p style="margin-bottom:10px">Nassim A, Sidi Moumen<br>Casablanca 20400, Maroc</p>
+        <p style="margin-bottom:10px"><a href="https://wa.me/212627001898" target="_blank" rel="noopener">06 27 00 18 98</a></p>
+        <h4 style="margin-top:16px">Horaires</h4>
+        <ul class="footer-hours">
+          <li>Lun – Dim <span>11h30 – 23h00</span></li>
+          <li>Vendredi <span>15h00 – 23h00</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="fmYear">2026</span> Fariss Mode — Tous droits réservés</p>
+      <p class="pay">Livraison partout au Maroc · Paiement à la livraison</p>
+    </div>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fariss Mode — Streetwear Urbain | Casablanca</title>
+<meta name="description" content="FARISS MODE — streetwear urbain à Sidi Moumen, Casablanca. Oversized tees, hoodies, cargos, sneakers, casquettes. Nouveaux drops chaque semaine. Livraison partout au Maroc.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="Fariss Mode — Streetwear Urbain | Casablanca">
+<meta property="og:description" content="Le drop Casablanca. Oversized, cargos, sneakers. Livraison partout au Maroc.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2300a651'/%3E%3Ctext x='2' y='25' font-family='Arial Black,Arial' font-size='22' font-weight='900' fill='%23ffffff'%3EFM%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- texture overlays -->
+<div class="grain" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
+
+<!-- page transition curtain -->
+<div class="curtain" id="fmCurtain" aria-hidden="true"><span class="curtain__label">FM</span></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html" data-curtain="FM" aria-label="Fariss Mode, accueil">
+      <span class="logo__mark">F<em>M</em></span>
+      <span class="logo__slash" aria-hidden="true"></span>
+      <span class="logo__txt">Fariss Mode<br>Casablanca</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navigation principale">
+      <a href="index.html" aria-current="page">Accueil</a>
+      <a href="shop.html">Shop</a>
+      <a href="lookbook.html">Drops</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn--ghost btn--sm" href="contact.html" data-curtain="CONTACT">Nous écrire</a>
+
+      <button class="icon-btn cart-btn" type="button" data-cart-open aria-label="Ouvrir le panier">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="square">
+          <path d="M4 7h16l-1.2 12.4H5.2L4 7zM8.5 7V5.2a3.5 3.5 0 017 0V7M9 11.5v3M15 11.5v3"/>
+        </svg>
+        <span class="cart-badge">0</span>
+      </button>
+
+      <button class="burger" id="fmBurger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="fmMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="scroll-progress" id="fmProgress"></div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="fmMenu">
+  <nav class="mobile-menu__links" aria-label="Menu mobile">
+    <a href="index.html"><span>01</span>Accueil</a>
+    <a href="shop.html"><span>02</span>Shop</a>
+    <a href="lookbook.html"><span>03</span>Drops</a>
+    <a href="about.html"><span>04</span>À propos</a>
+    <a href="contact.html"><span>05</span>Contact</a>
+  </nav>
+  <div class="mobile-menu__foot">
+    <div class="mm-block">
+      <p>Boutique</p>
+      <p style="color:var(--bone)">Nassim A, Sidi Moumen — Casa 20400</p>
+    </div>
+    <div class="mm-block">
+      <p>Horaires</p>
+      <p style="color:var(--bone)">11h30 – 23h00 · Ven 15h00</p>
+    </div>
+    <div class="mm-block">
+      <p>WhatsApp</p>
+      <a class="btn btn--volt btn--sm btn--block" href="https://wa.me/212627001898" target="_blank" rel="noopener">06 27 00 18 98</a>
+    </div>
+    <div class="mm-block">
+      <p>Réseaux</p>
+      <div class="mm-socials">
+        <a class="icon-btn" href="https://instagram.com/fariss_mode" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="icon-btn" href="https://wa.me/212627001898" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.05-1.32A10 10 0 1012 2z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__grid-bg" aria-hidden="true"></div>
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <div class="hero__sticker" aria-hidden="true">
+      <span>Drop 004</span>
+      <span>FM® 2026</span>
+    </div>
+
+    <div class="wrap hero__inner">
+      <div class="hero__top">
+        <div class="hero__loc">
+          <p>Store</p>
+          <strong>Sidi Moumen — Casa</strong>
+        </div>
+        <div class="hero__drop-flag">
+          <i class="dot"></i>
+          <span class="mono">Drop 004 live</span>
+        </div>
+      </div>
+
+      <h1 class="display display--xl hero__title">
+        <span class="l1 glitch" data-text="FARISS">Fariss</span>
+        <span class="l2" data-text="MODE">Mode</span>
+      </h1>
+
+      <div class="hero__underline" aria-hidden="true"><span></span></div>
+
+      <p class="hero__tag">Streetwear urbain — <b>Casablanca</b><br>Oversized · Cargos · Sneakers · Caps</p>
+
+      <div class="hero__cta">
+        <a class="btn btn--volt" href="shop.html" data-curtain="SHOP">
+          Voir la collection
+          <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn" href="https://wa.me/212627001898" target="_blank" rel="noopener">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.05-1.32A10 10 0 1012 2z"/></svg>
+          Écrire sur WhatsApp
+        </a>
+      </div>
+
+      <div class="hero__meta">
+        <div><strong>2 400+</strong><span>Pièces vendues</span></div>
+        <div><strong>42</strong><span>Drops</span></div>
+        <div><strong>15</strong><span>Wilayas livrées</span></div>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true"><i></i> Scroll</div>
+  </section>
+
+  <!-- ============ TICKER ============ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>Livraison partout au Maroc</span><span class="sep">✦</span>
+      <span>Nouveaux drops chaque semaine</span><span class="sep">✦</span>
+      <span>Style urbain</span><span class="sep">✦</span>
+      <span>Paiement à la livraison</span><span class="sep">✦</span>
+      <span>Commande WhatsApp</span><span class="sep">✦</span>
+      <span>Taille unique disponible</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section class="section" id="categories">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Nos catégories</span>
+        <h2 class="display display--lg reveal reveal--clip">Choisis<br>ta silhouette</h2>
+        <span class="index">01 / 04</span>
+      </div>
+
+      <div class="cats">
+        <a class="cat reveal" href="shop.html?category=tees" data-cat-card="tees" style="--d:0ms">
+          <div class="cat__media"><img src="https://images.unsplash.com/photo-1773525912457-6a7278efb9e4?w=700&h=900&q=80&fm=jpg&fit=crop" alt="T-shirts et hoodies oversize" loading="lazy"></div>
+          <span class="cat__idx">01</span>
+          <div class="cat__wipe"></div>
+          <div class="cat__body">
+            <div>
+              <h3 class="cat__name">T-Shirts<br>&amp; Hoodies</h3>
+              <p class="cat__count" data-cat-count>—</p>
+            </div>
+            <span class="cat__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+
+        <a class="cat reveal" href="shop.html?category=pants" data-cat-card="pants" style="--d:80ms">
+          <div class="cat__media"><img src="https://images.unsplash.com/photo-1715758889706-08aef3e1df84?w=700&h=900&q=80&fm=jpg&fit=crop" alt="Pantalons et cargos" loading="lazy"></div>
+          <span class="cat__idx">02</span>
+          <div class="cat__wipe"></div>
+          <div class="cat__body">
+            <div>
+              <h3 class="cat__name">Pantalons<br>&amp; Cargos</h3>
+              <p class="cat__count" data-cat-count>—</p>
+            </div>
+            <span class="cat__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+
+        <a class="cat reveal" href="shop.html?category=sneakers" data-cat-card="sneakers" style="--d:160ms">
+          <div class="cat__media"><img src="https://images.unsplash.com/photo-1678266622946-668ede09af9a?w=700&h=900&q=80&fm=jpg&fit=crop" alt="Sneakers" loading="lazy"></div>
+          <span class="cat__idx">03</span>
+          <div class="cat__wipe"></div>
+          <div class="cat__body">
+            <div>
+              <h3 class="cat__name">Sneakers</h3>
+              <p class="cat__count" data-cat-count>—</p>
+            </div>
+            <span class="cat__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+
+        <a class="cat reveal" href="shop.html?category=caps" data-cat-card="caps" style="--d:240ms">
+          <div class="cat__media"><img src="https://images.unsplash.com/photo-1778161050906-032dff978452?w=700&h=900&q=80&fm=jpg&fit=crop" alt="Casquettes et accessoires" loading="lazy"></div>
+          <span class="cat__idx">04</span>
+          <div class="cat__wipe"></div>
+          <div class="cat__body">
+            <div>
+              <h3 class="cat__name">Casquettes<br>&amp; Accessoires</h3>
+              <p class="cat__count" data-cat-count>—</p>
+            </div>
+            <span class="cat__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="cut cut--bone" aria-hidden="true"></div>
+
+  <!-- ============ DERNIER DROP ============ -->
+  <section class="section" id="drop">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Dernier drop</span>
+        <h2 class="display display--lg reveal reveal--clip">Drop 004<br>Night Shift</h2>
+        <span class="index">02 / 04</span>
+      </div>
+
+      <div class="drop">
+        <div class="drop__left">
+          <div class="drop__head">
+            <span class="tag tag--pulse">New</span>
+            <span class="tag tag--dark">Limited</span>
+            <span class="mono muted">Réf. FM-004</span>
+          </div>
+          <h3 class="display display--md drop__title">Collection<br>Night Shift</h3>
+          <p class="lead">Silhouettes larges, cotons lourds, blanc et vert. La pièce forte de la saison : le hoodie boxy Sidi Moumen et le cargo Concrete.</p>
+
+          <div class="drop__row" style="margin-top:18px">
+            <a class="btn btn--volt btn--sm" href="shop.html" data-curtain="SHOP">Tout le drop</a>
+            <a class="btn btn--ghost btn--sm" href="lookbook.html">Voir le lookbook</a>
+          </div>
+
+          <div class="countdown" id="fmCountdown" role="timer" aria-label="Compte à rebours du prochain drop">
+            <div style="--i:0"><strong data-cd="d">00</strong><span>Jours</span></div>
+            <div style="--i:1"><strong data-cd="h">00</strong><span>Heures</span></div>
+            <div style="--i:2"><strong data-cd="m">00</strong><span>Min</span></div>
+            <div style="--i:3"><strong data-cd="s">00</strong><span>Sec</span></div>
+          </div>
+          <p class="mono muted" style="margin-top:8px">Prochain drop · vendredi 23h00</p>
+        </div>
+
+        <div class="grid-products grid-products--drop" id="fmFeatured"><!-- rendered by script.js --></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cut cut--out" aria-hidden="true"></div>
+
+  <!-- ============ POURQUOI FM ============ -->
+  <section class="section" id="pourquoi">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Pourquoi Fariss Mode</span>
+        <h2 class="display display--lg reveal reveal--clip">Pas une<br>boutique. Un crew.</h2>
+        <span class="index">03 / 04</span>
+      </div>
+
+      <div class="stats reveal" style="margin-bottom:22px">
+        <div class="stat">
+          <strong><span data-count="5360" data-suffix="+">0</span></strong>
+          <span>Abonnés Instagram</span>
+        </div>
+        <div class="stat">
+          <strong><span data-count="2400" data-suffix="+">0</span></strong>
+          <span>Pièces vendues</span>
+        </div>
+        <div class="stat">
+          <strong><span data-count="42">0</span></strong>
+          <span>Drops publiés</span>
+        </div>
+        <div class="stat">
+          <strong><span data-count="15">0</span></strong>
+          <span>Wilayas livrées</span>
+        </div>
+      </div>
+
+      <div class="feats">
+        <article class="feat reveal" style="--d:0ms">
+          <span class="feat__n">01</span>
+          <div class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l5-5M15 4l5 5-9 9-5-5 9-9zM7 17l-3 3M17 7l-3-3"/></svg></div>
+          <h3>Style urbain authentique</h3>
+          <p>Des pièces pensées pour la rue de Sidi Moumen, portées par la communauté locale. Rien d'importé hors de prix.</p>
+        </article>
+
+        <article class="feat reveal" style="--d:90ms">
+          <span class="feat__n">02</span>
+          <div class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.8"/><circle cx="17.5" cy="18" r="1.8"/></svg></div>
+          <h3>Livraison rapide partout au Maroc</h3>
+          <p>Casablanca en 24h, le reste du Maroc en 2 à 4 jours. Paiement à la livraison, sans surprise..</p>
+        </article>
+
+        <article class="feat reveal" style="--d:180ms">
+          <span class="feat__n">03</span>
+          <div class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.6 5.6L21 9.4l-4.5 4.3 1.1 6.3L12 17l-5.6 3 1.1-6.3L3 9.4l6.4-.8z"/></svg></div>
+          <h3>Pièces exclusives</h3>
+          <p>Séries courtes, tirages limités, quand c'est parti c'est fini. Chaque drop a une durée.</p>
+        </article>
+
+        <article class="feat reveal" style="--d:270ms">
+          <span class="feat__n">04</span>
+          <div class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 20v-7a6 6 0 1112 0v7M4 20h16"/></svg></div>
+          <h3>Communauté grandissante</h3>
+          <p>Plus de 5 360 abonnés sur Instagram et un WhatsApp qui répond. On te montre les pièces en vrai.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AVIS ============ -->
+  <section class="section section--tight" id="avis">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Ils ont porté le drop</span>
+        <h2 class="display display--md reveal reveal--clip">Avis clients</h2>
+        <span class="index">04 / 04</span>
+      </div>
+
+      <div class="quotes">
+        <blockquote class="quote reveal">
+          <p>Le cargo est exactement comme en boutique, la coupe est large mais pas énorme. Livraison à Rabat en 2 jours, nickel.</p>
+          <footer><cite>Yassine — Rabat</cite><span class="stars">★★★★★</span></footer>
+        </blockquote>
+        <blockquote class="quote reveal" style="--d:90ms">
+          <p>Enfin une marque casablancaise qui fait du vrai streetwear. Le hoodie boxy est une tuerie, je suis revenu deux fois.</p>
+          <footer><cite>Mehdi — Casa</cite><span class="stars">★★★★★</span></footer>
+        </blockquote>
+        <blockquote class="quote reveal" style="--d:180ms">
+          <p>Commandé sur WhatsApp, réponse en 5 minutes, la photo qu'ils m'ont envoyée du drop m'a fait regretter le M.</p>
+          <footer><cite>Adam — Tanger</cite><span class="stars">★★★★☆</span></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INSTAGRAM ============ -->
+  <section class="section" id="instagram">
+    <div class="wrap">
+      <div class="ig-head reveal">
+        <div class="ig-handle">
+          <strong>@fariss_mode</strong>
+          <span class="ig-followers">5 360+ abonnés · 42 posts</span>
+        </div>
+        <a class="btn btn--volt btn--sm" href="https://instagram.com/fariss_mode" target="_blank" rel="noopener" style="margin-left:auto">
+          Suivre
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="ig-grid">
+        <figure class="ig-tile reveal--scale reveal" style="--d:0ms">
+          <img src="https://images.unsplash.com/photo-1768696082603-5b7a9f0a10ab?w=800&h=800&q=80&fm=jpg&fit=crop" alt="Flatlay FM drop" loading="lazy">
+          <figcaption>Flatlay · Drop 004</figcaption>
+        </figure>
+        <figure class="ig-tile reveal--scale reveal" style="--d:60ms">
+          <img src="https://images.unsplash.com/photo-1628847115161-d6793dc59c7f?w=600&h=600&q=80&fm=jpg&fit=crop" alt="Street look cargo" loading="lazy">
+          <figcaption>Cargo Concrete</figcaption>
+        </figure>
+        <figure class="ig-tile reveal--scale reveal" style="--d:120ms">
+          <img src="https://images.unsplash.com/photo-1567069026129-817983650d0c?w=600&h=600&q=80&fm=jpg&fit=crop" alt="Sneakers Block 01" loading="lazy">
+          <figcaption>Block 01</figcaption>
+        </figure>
+        <figure class="ig-tile reveal--scale reveal" style="--d:180ms">
+          <img src="https://images.unsplash.com/photo-1499972777470-6a932ea55420?w=600&h=600&q=80&fm=jpg&fit=crop" alt="Hoodie street" loading="lazy">
+          <figcaption>Hoodie boxy</figcaption>
+        </figure>
+        <figure class="ig-tile reveal--scale reveal" style="--d:240ms">
+          <img src="https://images.unsplash.com/photo-1678721938524-1a3ee398de2a?w=600&h=600&q=80&fm=jpg&fit=crop" alt="Cap 5 panel" loading="lazy">
+          <figcaption>5 panel</figcaption>
+        </figure>
+        <figure class="ig-tile reveal--scale reveal" style="--d:300ms">
+          <img src="https://images.unsplash.com/photo-1543728069-a3f97c5a2f32?w=600&h=600&q=80&fm=jpg&fit=crop" alt="Team FM" loading="lazy">
+          <figcaption>Le crew</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band">
+    <div class="wrap">
+      <p class="mono" style="letter-spacing:.2em;text-transform:uppercase">Drop 004 · En boutique & en ligne</p>
+      <h2 class="reveal--clip reveal" style="margin-top:8px">Passe<br>à la boutique</h2>
+      <p class="cta-band__meta">
+        <div><p>Nassim A — Sidi Moumen</p><p style="opacity:.7">Casablanca 20400</p></div>
+        <div><p>11h30 – 23h00</p><p style="opacity:.7">Vendredi dès 15h00</p></div>
+        <div><p>Livraison Maroc</p><p style="opacity:.7">Offerte dès 1 000 DH</p></div>
+      </p>
+      <a class="btn" href="contact.html" data-curtain="CONTACT">Itinéraire & horaires</a>
+    </div>
+    <div class="cta-band__marquee" aria-hidden="true">FARISS MODE · FARISS MODE · FARISS MODE ·&nbsp;</div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-word" aria-hidden="true">FARISS MODE</p>
+
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a class="logo" href="index.html" style="margin-bottom:12px">
+          <span class="logo__mark">F<em>M</em></span>
+          <span class="logo__slash" aria-hidden="true"></span>
+        </a>
+        <p>Streetwear urbain né à Sidi Moumen. Oversized, cargos, sneakers, casquettes. Des pièces en série courte, portées par la communauté.</p>
+        <div class="footer-socials" style="margin-top:14px">
+          <a href="https://instagram.com/fariss_mode" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/212627001898" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.05-1.32A10 10 0 1012 2z"/></svg>
+          </a>
+          <a href="https://wa.me/212627001898" target="_blank" rel="noopener" aria-label="Appeler">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2 2A16 16 0 014 5a2 2 0 012-2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Boutique</h4>
+        <ul>
+          <li><a href="shop.html">Tous les produits</a></li>
+          <li><a href="shop.html?category=tees">T-Shirts &amp; Hoodies</a></li>
+          <li><a href="shop.html?category=pants">Pantalons &amp; Cargos</a></li>
+          <li><a href="shop.html?category=sneakers">Sneakers</a></li>
+          <li><a href="shop.html?category=caps">Casquettes &amp; Accessoires</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>La marque</h4>
+        <ul>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="lookbook.html">Drops &amp; Lookbook</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://instagram.com/fariss_mode" target="_blank" rel="noopener">@fariss_mode</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Infos</h4>
+        <p style="margin-bottom:10px">Nassim A, Sidi Moumen<br>Casablanca 20400, Maroc</p>
+        <p style="margin-bottom:10px"><a href="https://wa.me/212627001898" target="_blank" rel="noopener">06 27 00 18 98</a></p>
+        <h4 style="margin-top:16px">Horaires</h4>
+        <ul class="footer-hours">
+          <li>Lun – Dim <span>11h30 – 23h00</span></li>
+          <li>Vendredi <span>15h00 – 23h00</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="fmYear">2026</span> Fariss Mode — Tous droits réservés</p>
+      <p class="pay">Livraison partout au Maroc · Paiement à la livraison</p>
+    </div>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

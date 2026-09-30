@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shop — Toutes les pièces | Fariss Mode</title>
+<meta name="description" content="Tous les produits Fariss Mode : oversized tees, hoodies, cargos, sneakers, casquettes. Livraison partout au Maroc, paiement à la livraison.">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2300a651'/%3E%3Ctext x='2' y='25' font-family='Arial Black,Arial' font-size='22' font-weight='900' fill='%23ffffff'%3EFM%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
+<div class="curtain" id="fmCurtain" aria-hidden="true"><span class="curtain__label">FM</span></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html" data-curtain="FM" aria-label="Fariss Mode, accueil">
+      <span class="logo__mark">F<em>M</em></span>
+      <span class="logo__slash" aria-hidden="true"></span>
+      <span class="logo__txt">Fariss Mode<br>Casablanca</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="shop.html" aria-current="page">Shop</a>
+      <a href="lookbook.html">Drops</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn--ghost btn--sm" href="contact.html" data-curtain="CONTACT">Nous écrire</a>
+      <button class="icon-btn cart-btn" type="button" data-cart-open aria-label="Ouvrir le panier">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="square">
+          <path d="M4 7h16l-1.2 12.4H5.2L4 7zM8.5 7V5.2a3.5 3.5 0 017 0V7M9 11.5v3M15 11.5v3"/>
+        </svg>
+        <span class="cart-badge">0</span>
+      </button>
+      <button class="burger" id="fmBurger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="fmMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="scroll-progress" id="fmProgress"></div>
+</header>
+
+<div class="mobile-menu" id="fmMenu">
+  <nav class="mobile-menu__links" aria-label="Menu mobile">
+    <a href="index.html"><span>01</span>Accueil</a>
+    <a href="shop.html"><span>02</span>Shop</a>
+    <a href="lookbook.html"><span>03</span>Drops</a>
+    <a href="about.html"><span>04</span>À propos</a>
+    <a href="contact.html"><span>05</span>Contact</a>
+  </nav>
+  <div class="mobile-menu__foot">
+    <div class="mm-block">
+      <p>Boutique</p>
+      <p style="color:var(--bone)">Nassim A, Sidi Moumen — Casa 20400</p>
+    </div>
+    <div class="mm-block">
+      <p>Horaires</p>
+      <p style="color:var(--bone)">11h30 – 23h00 · Ven 15h00</p>
+    </div>
+    <div class="mm-block">
+      <p>WhatsApp</p>
+      <a class="btn btn--volt btn--sm btn--block" href="https://wa.me/212627001898" target="_blank" rel="noopener">06 27 00 18 98</a>
+    </div>
+    <div class="mm-block">
+      <p>Réseaux</p>
+      <div class="mm-socials">
+        <a class="icon-btn" href="https://instagram.com/fariss_mode" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="icon-btn" href="https://wa.me/212627001898" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.05-1.32A10 10 0 1012 2z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Accueil</a> <i>/</i> Shop</p>
+      <h1 class="display display--lg reveal reveal--clip">Le shop</h1>
+      <p class="lead">Toutes les pièces FM dispo en boutique. Filtre, choisis ta taille, commande — on livre partout au Maroc.</p>
+    </div>
+  </section>
+
+  <div class="tools">
+    <div class="wrap">
+      <div class="search-bar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+        <input id="fmSearch" type="search" placeholder="Chercher une pièce…" autocomplete="off" aria-label="Rechercher un produit">
+        <button class="search-bar__clear" id="fmSearchClear" type="button" aria-label="Effacer la recherche">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M5 5l14 14M19 5L5 19"/></svg>
+        </button>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrer par catégorie">
+        <button class="filter is-on" type="button" data-filter="all">Tout</button>
+        <button class="filter" type="button" data-filter="tees">T-Shirts &amp; Hoodies</button>
+        <button class="filter" type="button" data-filter="pants">Pantalons &amp; Cargos</button>
+        <button class="filter" type="button" data-filter="sneakers">Sneakers</button>
+        <button class="filter" type="button" data-filter="caps">Caps &amp; Accessoires</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="results-bar">
+        <p id="fmResultCount">—</p>
+        <p>Livraison Maroc · Paiement à la livraison</p>
+      </div>
+      <div class="grid-products grid-products--shop" id="fmShopGrid"></div>
+      <div class="empty-state" id="fmEmpty" hidden>
+        <p>Rien trouvé dans ce drop</p>
+        <a class="btn btn--volt btn--sm" href="shop.html">Réinitialiser</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="cut cut--bone" aria-hidden="true"></div>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Tailles</span>
+        <h2 class="display display--md reveal reveal--clip">Guide express</h2>
+        <span class="index">Tailles</span>
+      </div>
+      <ul class="info-list">
+        <li><span class="k">Hoodies</span><span class="v">S · M · L · XL — coupe boxy, prends ta taille habituelle ou au-dessus</span></li>
+        <li><span class="k">Tee</span><span class="v">S · M · L · XL — coupe oversize assumée</span></li>
+        <li><span class="k">Cargos</span><span class="v">M · L · XL — taille élastiquée, coupe large</span></li>
+        <li><span class="k">Sneakers</span><span class="v">40 → 45 — true to size</span></li>
+        <li><span class="k">Caps</span><span class="v">TU — taille unique réglable</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <p class="mono" style="letter-spacing:.2em;text-transform:uppercase">Besoin d'un conseil ?</p>
+      <h2 class="reveal reveal--clip" style="margin-top:8px">On est<br>sur WhatsApp</h2>
+      <p class="cta-band__meta">
+        <div><p>Ta taille</p><p style="opacity:.7">On répond en 5 min</p></div>
+        <div><p>Essai en boutique</p><p style="opacity:.7">Nassim A, Sidi Moumen</p></div>
+      </p>
+      <a class="btn" href="https://wa.me/212627001898" target="_blank" rel="noopener">06 27 00 18 98</a>
+    </div>
+    <div class="cta-band__marquee" aria-hidden="true">DROP 004 · DROP 004 · DROP 004 ·&nbsp;</div>
+  </section>
+
+  <!-- quick view -->
+  <div class="qv" id="fmQV" role="dialog" aria-modal="true" aria-label="Détail du produit">
+    <div class="qv__scrim"></div>
+    <div class="qv__panel">
+      <button class="qv__close" type="button" aria-label="Fermer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+      <div class="qv__media"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt=""></div>
+      <div class="qv__body">
+        <p class="mono" style="color:var(--green-text)" data-qv-cat></p>
+        <h2 class="qv__name" data-qv-name></h2>
+        <p class="qv__desc" data-qv-desc></p>
+        <div class="qv__row">
+          <p class="price" style="font-size:20px" data-qv-price></p>
+        </div>
+        <div>
+          <p class="mono muted" style="margin-bottom:6px">Taille</p>
+          <div class="card__sizes" data-qv-sizes></div>
+        </div>
+        <button class="btn btn--volt btn--block" type="button" data-qv-add data-add="">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M4 7h16l-1.2 12.4H5.2L4 7zM8.5 7V5.2a3.5 3.5 0 017 0V7"/></svg>
+          Ajouter au panier
+        </button>
+        <ul class="qv__specs" data-qv-specs></ul>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-word" aria-hidden="true">FARISS MODE</p>
+
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a class="logo" href="index.html" style="margin-bottom:12px">
+          <span class="logo__mark">F<em>M</em></span>
+          <span class="logo__slash" aria-hidden="true"></span>
+        </a>
+        <p>Streetwear urbain né à Sidi Moumen. Oversized, cargos, sneakers, casquettes. Des pièces en série courte, portées par la communauté.</p>
+        <div class="footer-socials" style="margin-top:14px">
+          <a href="https://instagram.com/fariss_mode" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/212627001898" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.05-1.32A10 10 0 1012 2z"/></svg>
+          </a>
+          <a href="https://wa.me/212627001898" target="_blank" rel="noopener" aria-label="Appeler">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2 2A16 16 0 014 5a2 2 0 012-2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Boutique</h4>
+        <ul>
+          <li><a href="shop.html">Tous les produits</a></li>
+          <li><a href="shop.html?category=tees">T-Shirts &amp; Hoodies</a></li>
+          <li><a href="shop.html?category=pants">Pantalons &amp; Cargos</a></li>
+          <li><a href="shop.html?category=sneakers">Sneakers</a></li>
+          <li><a href="shop.html?category=caps">Casquettes &amp; Accessoires</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>La marque</h4>
+        <ul>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="lookbook.html">Drops &amp; Lookbook</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://instagram.com/fariss_mode" target="_blank" rel="noopener">@fariss_mode</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Infos</h4>
+        <p style="margin-bottom:10px">Nassim A, Sidi Moumen<br>Casablanca 20400, Maroc</p>
+        <p style="margin-bottom:10px"><a href="https://wa.me/212627001898" target="_blank" rel="noopener">06 27 00 18 98</a></p>
+        <h4 style="margin-top:16px">Horaires</h4>
+        <ul class="footer-hours">
+          <li>Lun – Dim <span>11h30 – 23h00</span></li>
+          <li>Vendredi <span>15h00 – 23h00</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="fmYear">2026</span> Fariss Mode — Tous droits réservés</p>
+      <p class="pay">Livraison partout au Maroc · Paiement à la livraison</p>
+    </div>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
